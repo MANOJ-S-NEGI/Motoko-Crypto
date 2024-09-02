@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "De_Coin_backend": {
+      "main": "src/De_Coin_backend/main.mo",
+      "type": "motoko"
+    },
+    "De_Coin_frontend": {
+      "dependencies": [
+        "De_Coin_backend"
+      ],
+      "source": [
+        "src/De_Coin_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "De_Coin_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
